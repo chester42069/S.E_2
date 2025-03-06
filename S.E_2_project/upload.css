@@ -1,0 +1,319 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 180px;
+    background-color: #4A6FA5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* CCS Logo */
+.ccslogo {
+    width: 140px; 
+    height: 140px;
+}
+
+/* Navigation */
+nav ul, .bottom-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav li, .bottom-nav li {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    padding: 12px;
+    width: 160px; 
+    font-size: 16px; 
+    transition: background-color 0.2s ease;
+}
+
+nav li a, .bottom-nav li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+}
+
+nav li img, .bottom-nav li img {
+    width: 28px; 
+    height: 28px;
+    margin-right: 10px;
+}
+
+/* Hover & Click Effects */
+nav li:hover, .bottom-nav li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+nav li:active, .bottom-nav li:active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Push bottom navigation to the bottom */
+.bottom-nav {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    color: #4A6FA5;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+    background: white;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 200px;
+}
+
+/* Buttons */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.profile-btn {
+    display: flex;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.profile-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.sort-btn, 
+.calendar-btn,
+.pdf-btn,
+.edit-btn,
+.delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Button Icons */
+.sort-btn img, 
+.calendar-btn img,
+.pdf-btn img,
+.edit-btn img,
+.delete-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Button Hover & Click Effects */
+button:hover, 
+.sort-btn:hover, 
+.calendar-btn:hover, 
+.pdf-btn:hover,
+.edit-btn:hover, 
+.delete-btn:hover {
+    background-color: #e0e0e0;
+}
+
+button:active, 
+.sort-btn:active, 
+.calendar-btn:active, 
+.pdf-btn:active, 
+.edit-btn:active, 
+.delete-btn:active {
+    background-color: #d0d0d0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Right Controls (Edit & Delete) */
+.right-controls {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+/* Repository List */
+.repository-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Repository Item */
+.box {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    height: 123px;
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Box Hover & Click Effects */
+.box:hover {
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+
+.box:active {
+    background-color: #e0e0e0;
+}
+
+/* Repository Items */
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.items h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.items p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination span {
+    margin: 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4A6FA5;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+/* Pagination Hover & Click Effects */
+.pagination span:hover {
+    color: #2a4f7c;
+    background-color: rgba(74, 111, 165, 0.2);
+}
+
+.pagination span:active {
+    background-color: rgba(74, 111, 165, 0.4);
+}
