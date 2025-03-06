@@ -4,77 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repository</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="list.css">
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
         <aside class="sidebar">
             <img src="img/ccslogo.png" alt="CCS Logo" class="ccslogo">
-            
-            <!-- Main Navigation -->
             <nav>
                 <ul>
-                    <li><a href="#">
-                        <img src="img/icons8-home-32.png" alt="Home">Home</a>
-                    </li>
-                    <li><a href="#">
-                        <img src="img/icons8-list-24.png" alt="List">List</a>
-                    </li>
-                    <li><a href="#">
-                        <img src="img/icons8-upload-file-32.png" alt="Upload">Upload</a>
-                    </li>
+                    <li><a href="#"><img src="img/home.svg" alt="Home">Home</a></li>
+                    <li><a href="#"><img src="img/list.svg" alt="List">List</a></li>
+                    <li><a href="upload.html"><img src="img/upload.svg" alt="Upload">Upload</a></li>
                 </ul>
             </nav>
-
-            <!-- Bottom Navigation -->
             <div class="bottom-nav">
                 <ul>
-                    <li><a href="#">
-                        <img src="img/icons8-log-out-24.png" alt="Log Out">Log Out</a>
-                    </li>
+                    <li><a href="#"><img src="img/log out.svg" alt="Log Out">Log Out</a></li>
                 </ul>
             </div>
         </aside>
-
-        <!-- Main Content -->
         <main class="content">
             <header>
-               <div class="top">
+                <div class="top">
                     <h1>Repository</h1>
-                    <button class="profile-btn">
-                        <img src="img/profile.png" alt="Profile">
-                    </button>
-               </div>
+                    <button class="profile-btn"><img src="img/profile.svg" alt="Profile"></button>
+                </div>
                 <hr>
                 <div class="controls">
                     <div class="search-bar">
                         <input type="text" placeholder="Search...">
                     </div>
-                    <button class="sort-btn">
-                        <img src="img/icons8-sort-50.png" alt="Sort">
-                    </button>
-                    <button class="calendar-btn">
-                        <img src="img/icons8-calendar-50.png" alt="Calendar">
-                    </button>
+                    
+                   <div class="dropdown">
+    <button class="sort-btn">
+        <img src="img/sort.svg" alt="Sort">
+    </button>
+    <div class="dropdown-content">
+        <a href="#">Title</a>
+        <a href="#">Author</a>
+        <a href="#">Classification</a>
+        <a href="#">Certificate Number</a>
+        <a href="#">Creation Date</a>
+    </div>
+</div>
 
-                    <!-- New Buttons (Edit & Delete) -->
+<div class="dropdown">
+    <button class="calendar-btn">
+        <img src="img/calendar.svg" alt="Calendar">
+    </button>
+    <div class="dropdown-content">
+        <a href="#">View by Month</a>
+        <a href="#">View by Week</a>
+        <a href="#">View by Day</a>
+    </div>
+</div>
+
+                    
                     <div class="right-controls">
-                        <button class="pdf-btn">
-                            <img src="img/icons8-pdf-64.png" alt="PDF">
-                        </button>
-                        <button class="edit-btn">
-                            <img src="img/icons8-edit-50.png" alt="Edit">
-                        </button>
-                        <button class="delete-btn">
-                            <img src="img/delete.png" alt="Delete">
-                        </button>
+                        <button class="pdf-btn"><img src="img/pdf.svg" alt="PDF"></button>
+                        <button class="edit-btn"><img src="img/edit.svg" alt="Edit"></button>
+                        <button class="delete-btn"><img src="img/delete.svg" alt="Delete"></button>
                         <input type="checkbox" checked>
                     </div>
                 </div>
             </header>
-
-            <!-- Repository List -->
             <section class="repository-list">
                 <article class="box">
                     <div class="items">
@@ -83,30 +76,7 @@
                     </div>
                     <input type="checkbox" checked>
                 </article>
-                <article class="box">
-                    <div class="items">
-                        <h2>A Fault Diagnosis System for a Pipeline Robot Based on Sound Signal Recognition</h2>
-                        <p>NL Villamor, W Nuñez, C Gonzalez...</p>
-                    </div>
-                    <input type="checkbox" checked>
-                </article>
-                <article class="box">
-                    <div class="items">
-                        <h2>A Fault Diagnosis System for a Pipeline Robot Based on Sound Signal Recognition</h2>
-                        <p>NL Villamor, W Nuñez, C Gonzalez...</p>
-                    </div>
-                    <input type="checkbox" checked>
-                </article>
-                <article class="box">
-                    <div class="items">
-                        <h2>A Fault Diagnosis System for a Pipeline Robot Based on Sound Signal Recognition</h2>
-                        <p>NL Villamor, W Nuñez, C Gonzalez...</p>
-                    </div>
-                    <input type="checkbox" checked>
-                </article>
             </section>
-
-            <!-- Pagination -->
             <footer class="pagination">
                 <span>Previous</span>
                 <span>&lt; 1 2 3 4 5 6 7 8 9 10 &gt;</span>
